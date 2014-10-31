@@ -11,7 +11,4 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+include_once('routes/app.php');
