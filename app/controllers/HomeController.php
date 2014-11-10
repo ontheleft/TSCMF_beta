@@ -22,6 +22,7 @@ class HomeController extends BaseController {
 
     public function getIndex()
     {
+        Utils::get_real_ip();
         return View::make('Home.Index');
     }
 
