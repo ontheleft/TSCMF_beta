@@ -7,3 +7,4 @@
  */
 
 const APP_PUBLIC_PATH = '/app';
+const APP_SYSTEM_URL = '/app';

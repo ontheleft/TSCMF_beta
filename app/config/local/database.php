@@ -23,12 +23,13 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'homestead',
+			'database'  => 'tscmf',
 			'username'  => 'homestead',
-			'password'  => 'secret',
+			'password'  => '1qazXSW@',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
-			'prefix'    => '',
+			'prefix'    => 'ts_',
+            'port'      => '3306',
 		),
 
 		'pgsql' => array(

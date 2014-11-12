@@ -6,15 +6,10 @@
  * Time: 16:34
  */
 
-class UserController extends BaseController {
+class UserController extends CrudController {
 
-    public function getIndex()
-    {
+    protected $Model = 'User';
 
-    }
 
-    public function getLogin()
-    {
 
-    }
-} 
+}

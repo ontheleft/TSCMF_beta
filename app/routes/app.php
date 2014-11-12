@@ -6,9 +6,9 @@
  * Time: 15:43
  */
 
-Route::get('/', function()
-{
-    return View::make('hello');
-});
+Route::get('/','HomeController@getIndex');
+Route::controller('/home', 'HomeController');
 
-Route::controller('/app', 'HomeController');
+CrudController::initRouter([
+    User::$admin_config,
+]);
