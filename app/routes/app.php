@@ -8,7 +8,7 @@
 
 Route::get('/','HomeController@getIndex');
 Route::controller('/home', 'HomeController');
-
+Route::controller('/action','ActionController');
 CrudController::initRouter([
     User::$admin_config,
 ]);

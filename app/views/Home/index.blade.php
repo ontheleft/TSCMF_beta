@@ -6,9 +6,9 @@
 @include('layout.css')
 <link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/bootstrap-responsive.min.css" />
 <link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/fullcalendar.css" />
-<link href="{{APP_PUBLIC_PATH}}/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
 <link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/jquery.gritter.css" />
-<link href='{{APP_PUBLIC_PATH}}/css/font-css.css' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 

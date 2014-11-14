@@ -11,5 +11,9 @@ class UserController extends CrudController {
     protected $Model = 'User';
 
 
+    public function login()
+    {
+        return 'hello';
+    }
 
 }
