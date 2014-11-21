@@ -26,4 +26,8 @@ class HomeController extends BaseController {
         return View::make('Home.Index');
     }
 
+    function __construct()
+    {
+        parent::__construct();
+    }
 }

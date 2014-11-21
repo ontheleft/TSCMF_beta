@@ -18,8 +18,12 @@ $(document).ready(function(){
 	
 	
 	$('#to-login').click(function(){
-	
+
 	});
+
+    $('#loginA').click(function(){
+        $("#loginForm").submit();
+    });
     
     if($.browser.msie == true && $.browser.version.slice(0,3) < 10) {
         $('input[placeholder]').each(function(){ 

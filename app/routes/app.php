@@ -6,9 +6,13 @@
  * Time: 15:43
  */
 
-Route::get('/','HomeController@getIndex');
-Route::controller('/home', 'HomeController');
 Route::controller('/action','ActionController');
-CrudController::initRouter([
-    User::$admin_config,
-]);
+Route::controller('/test','TestController');
+
+Route::group(array('before' => 'auth'), function () {
+    Route::get('/','HomeController@getIndex');
+    Route::controller('/home', 'HomeController');
+    CrudController::initRouter([
+        User::$admin_config,
+    ]);
+});

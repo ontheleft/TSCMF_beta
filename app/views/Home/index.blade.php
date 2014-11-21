@@ -1,13 +1,17 @@
 <html lang="en">
 <head>
 <title>Matrix Admin</title>
+
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-@include('layout.css')
+<link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/bootstrap.min.css" />
 <link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/bootstrap-responsive.min.css" />
 <link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/fullcalendar.css" />
-
+<link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/matrix-style.css" />
+<link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/matrix-media.css" />
+<link href="{{APP_PUBLIC_PATH}}/font-awesome/css/font-awesome.css" rel="stylesheet" />
 <link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/jquery.gritter.css" />
+<link href='{{APP_PUBLIC_PATH}}/css/font-css.css' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
