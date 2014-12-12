@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -122,6 +122,9 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        'Barryvdh\Debugbar\ServiceProvider',
+        'Zizaco\Entrust\EntrustServiceProvider',
+        'Cooper\Wechat\WechatServiceProvider',//微信
 	),
 
 	/*
@@ -188,7 +191,10 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-
+        'Debugbar'        => 'Barryvdh\Debugbar\Facade',
+        'Entrust'         => 'Zizaco\Entrust\EntrustFacade',
+        'WeChatServer'    => 'Cooper\Wechat\Facades\WeChatServer',
+        'WeChatClient'    => 'Cooper\Wechat\Facades\WeChatClient',
 	),
 
 );

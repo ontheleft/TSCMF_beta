@@ -25,7 +25,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'tscmf',
 			'username'  => 'homestead',
-			'password'  => '1qazXSW@',
+			'password'  => 'secret',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => 'ts_',
