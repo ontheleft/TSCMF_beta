@@ -125,6 +125,7 @@ return array(
         'Barryvdh\Debugbar\ServiceProvider',
         'Zizaco\Entrust\EntrustServiceProvider',
         'Cooper\Wechat\WechatServiceProvider',//微信
+		'Schickling\Backup\BackupServiceProvider',//数据库备份和恢复
 	),
 
 	/*
@@ -197,4 +198,6 @@ return array(
         'WeChatClient'    => 'Cooper\Wechat\Facades\WeChatClient',
 	),
 
+	'html_domain'      => 'html.tscmf.com',
+	'manager_domain'   => 'dev.tscmf.com',
 );

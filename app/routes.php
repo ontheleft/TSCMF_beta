@@ -11,4 +11,14 @@
 |
 */
 
-include_once('routes/app.php');
+$htmlDomain    = Config::get('app.html_domain');
+$managerDomain = Config::get('app.manager_domain');
+//内网接口
+Route::group(array('domain' => $managerDomain), function () {
+    include('routes/manager.php');
+});
+
+//外网
+Route::group(array('domain' => $htmlDomain), function () {
+
+});
