@@ -10,38 +10,30 @@ use Zizaco\Entrust\EntrustRole;
 class Role extends EntrustRole{
 
     public static $admin_config = [
-        'title'             => '用户',
-        'description'       => '',
-        'router'            => 'user',
-        'router_controller' => 'UserController',
+        'title'             => '角色',
+        'description'       => '用户角色',
+        'router'            => 'role',
+        'router_controller' => 'RoleController',
         'items'             => [
             'id' => [
                 'title'     => '序号',
                 'type'      => 'int',
+                'attr'      => 'onlyShow',
             ],
-            'username' => [
-                'title'     => '用户名',
+            'name' => [
+                'title'     => '角色标识',
                 'type'      => 'string',
                 'validator' => 'required'
             ],
-            'email'    => [
-                'title'     => 'Email',
+            'display_name'  => [
+                'title'     => '角色名称',
                 'type'      => 'string',
-                'validator' => 'required|email'
+                'validator' => 'required'
             ],
-            'mobile'    => [
-                'title'     => '联系电话',
-                'type'      => 'string',
-                'validator' => 'required|mobile'
-            ],
-            'password' => [
-                'title'  => '密码',
-                'type'   => 'password',
-                'hidden' => true,
-            ],
-            'avatar'   => [
-                'title' => '头像',
-                'type'  => 'image',
+            'remark'    => [
+                'title'     => '角色备注',
+                'type'      => 'text',
+                'validator' => 'required'
             ],
         ],
     ];

@@ -32,6 +32,11 @@ class User extends Eloquent implements UserInterface, RemindableInterface
 		'router'            => 'user',
 		'router_controller' => 'UserController',
 		'items'             => [
+			'id' => [
+				'title'     => '序号',
+				'type'      => 'string',
+				'attr'      => 'onlyShow',
+			],
 			'username' => [
 				'title'     => '用户名',
 				'type'      => 'string',

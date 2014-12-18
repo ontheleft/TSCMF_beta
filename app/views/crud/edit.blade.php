@@ -17,7 +17,11 @@
 						@if($page['action_method']=='put')
 						<input type="hidden" name="_method" value="PUT"/>
 						@endif
+
 						@foreach($config['items'] as $key=>$item)
+						@if(array_key_exists('attr',$item)&&$item['attr']=='onlyShow')
+							<?php continue; ?>
+						@endif
 						@if($item['type']=='image')
 						<div class="form-group">
 							<label for="ipt_{{$key}}">{{$item['title']}}</label>

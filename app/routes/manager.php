@@ -14,5 +14,6 @@ Route::group(array('before' => 'auth'), function () {
     Route::controller('/home', 'HomeController');
     CrudController::initRouter([
         User::$admin_config,
+        Role::$admin_config,
     ]);
 });
