@@ -1,11 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Matrix Admin-{{APP_PUBLIC_PATH}}</title>
+<title>{{Config::get('app.system_name')}}-{{APP_PUBLIC_PATH}}</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 @section('css')
 <link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/bootstrap.min.css" />
 <link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/uniform.css" />
 <link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/fullcalendar.css" />
 <link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/matrix-style.css" />
 <link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/matrix-media.css" />

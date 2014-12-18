@@ -34,22 +34,22 @@ class User extends Eloquent implements UserInterface, RemindableInterface
 		'items'             => [
 			'id' => [
 				'title'     => '序号',
-				'type'      => 'string',
+				'type'      => 'text',
 				'attr'      => 'onlyShow',
 			],
 			'username' => [
 				'title'     => '用户名',
-				'type'      => 'string',
+				'type'      => 'text',
 				'validator' => 'required'
 			],
 			'email'    => [
 				'title'     => 'Email',
-				'type'      => 'string',
+				'type'      => 'text',
 				'validator' => 'required|email'
 			],
             'mobile'    => [
                 'title'     => '联系电话',
-                'type'      => 'string',
+                'type'      => 'text',
                 'validator' => 'required|mobile'
             ],
 			'password' => [
