@@ -34,7 +34,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface
 		'items'             => [
 			'id' => [
 				'title'     => '序号',
-				'type'      => 'text',
+				'type'      => 'hidden',
 				'attr'      => 'onlyShow',
 			],
 			'username' => [

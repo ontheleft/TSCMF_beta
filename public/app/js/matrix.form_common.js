@@ -1,15 +1,8 @@
-
-$(document).ready(function(){
-	
+$(document).ready(function() {
 	$('input[type=checkbox],input[type=radio],input[type=file]').uniform();
-	
 	$('select').select2();
-    $('.colorpicker').colorpicker();
-    $('.datepicker').datepicker();
-});
-
-$(document).ready(function() { 	
-
+	$('.colorpicker').colorpicker();
+	$('.datepicker').datepicker();
 	//------------- Tags plugin  -------------//
 	
 	$("#tags").select2({

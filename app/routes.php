@@ -13,6 +13,8 @@
 
 $htmlDomain    = Config::get('app.html_domain');
 $managerDomain = Config::get('app.manager_domain');
+Route::any('image/upload','FileController@upload');
+Route::any('image/checkExist','FileController@checkExist');
 //内网接口
 Route::group(array('domain' => $managerDomain), function () {
     include('routes/manager.php');

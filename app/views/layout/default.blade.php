@@ -14,6 +14,7 @@
 <link href="{{APP_PUBLIC_PATH}}/font-awesome/css/font-awesome.css" rel="stylesheet" />
 <link rel="stylesheet" href="{{APP_PUBLIC_PATH}}/css/jquery.gritter.css" />
 <link href='{{APP_PUBLIC_PATH}}/css/font-css.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="{{APP_PUBLIC_PATH}}/css/uploadify.css" />
 @show
 </head>
 <body>
@@ -418,27 +419,22 @@
 </div>
 <!--end-Footer-part-->
 @section('js')
-<script src="{{APP_PUBLIC_PATH}}/js/excanvas.min.js"></script>
 <script src="{{APP_PUBLIC_PATH}}/js/jquery.min.js"></script>
 <script src="{{APP_PUBLIC_PATH}}/js/jquery.ui.custom.js"></script>
 <script src="{{APP_PUBLIC_PATH}}/js/bootstrap.min.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/jquery.flot.min.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/jquery.flot.resize.min.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/jquery.peity.min.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/fullcalendar.min.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/matrix.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/matrix.dashboard.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/jquery.gritter.min.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/matrix.interface.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/matrix.chat.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/jquery.validate.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/matrix.form_validation.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/jquery.wizard.js"></script>
+<script src="{{APP_PUBLIC_PATH}}/js/bootstrap-colorpicker.js"></script>
+<script src="{{APP_PUBLIC_PATH}}/js/bootstrap-datepicker.js"></script>
+<script src="{{APP_PUBLIC_PATH}}/js/jquery.toggle.buttons.js"></script>
+<script src="{{APP_PUBLIC_PATH}}/js/masked.js"></script>
 <script src="{{APP_PUBLIC_PATH}}/js/jquery.uniform.js"></script>
 <script src="{{APP_PUBLIC_PATH}}/js/select2.min.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/matrix.popover.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/jquery.dataTables.min.js"></script>
-<script src="{{APP_PUBLIC_PATH}}/js/matrix.tables.js"></script>
+<script src="{{APP_PUBLIC_PATH}}/js/matrix.js"></script>
+<script src="{{APP_PUBLIC_PATH}}/js/matrix.form_common.js"></script>
+<script src="{{APP_PUBLIC_PATH}}/js/wysihtml5-0.3.0.js"></script>
+<script src="{{APP_PUBLIC_PATH}}/js/jquery.peity.min.js"></script>
+<script src="{{APP_PUBLIC_PATH}}/js/bootstrap-wysihtml5.js"></script>
+<script src="{{APP_PUBLIC_PATH}}/js/jquery.upload.js"></script>
+
 <script type="text/javascript">
   // This function is called from the pop-up menus to transfer to
   // a different page. Ignore if the value returned is a null string:
@@ -463,6 +459,8 @@ function resetMenu() {
    document.gomenu.selector.selectedIndex = 2;
 }
 </script>
+@show
+@section('inline_scripts')
 @show
 </body>
 </html>

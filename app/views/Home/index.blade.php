@@ -332,7 +332,7 @@
 @include('layout.footer')
 <!--end-Footer-part-->
 @include('layout.js')
-<script src="{{APP_PUBLIC_PATH}}/js/excanvas.min.js"></script>
+<script src="{{APP_PUBLIC_PATH}}/js/jquery.min.js"></script>
 <script src="{{APP_PUBLIC_PATH}}/js/jquery.ui.custom.js"></script>
 <script src="{{APP_PUBLIC_PATH}}/js/bootstrap.min.js"></script>
 <script src="{{APP_PUBLIC_PATH}}/js/jquery.flot.min.js"></script>
