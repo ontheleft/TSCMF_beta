@@ -451,7 +451,7 @@
           else {  
             document.location.href = newURL;
           }
-      }
+      }//test
   }
 
 // resets the menu selection upon entry to this page:
