@@ -19,6 +19,7 @@ Route::group(array('domain' => $managerDomain), function () {
 });
 
 //外网
+
 Route::group(array('domain' => $htmlDomain), function () {
     include('routes/www.php');
 });
